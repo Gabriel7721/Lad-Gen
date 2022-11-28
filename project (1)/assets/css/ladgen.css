@@ -140,7 +140,7 @@ body {
 }
 
 .main-border-button a {
-  font-size: 13px;
+  font-size: 15;
   color: #fff;
   border: 1px solid #fff;
   padding: 12px 25px;
@@ -150,6 +150,22 @@ body {
 }
 
 .main-border-button a:hover {
+  background-color: #fff;
+  color: #2a2a2a;
+}
+
+.main-border-button1 a {
+  font-size: 20;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 5px 25px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all .3s;
+  border-radius: 10px;
+}
+
+.main-border-button1 a:hover {
   background-color: #fff;
   color: #2a2a2a;
 }
@@ -1291,10 +1307,29 @@ Explore
 #explore .left-content .main-border-button a {
   color: #2a2a2a;
   border-color: #2a2a2a;
-  margin-top: 35px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 #explore .left-content .main-border-button a:hover {
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.main-border-button1 a {
+  color: #2a2a2a;
+  border-color: #2a2a2a;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main-border-button1 a:hover {
   background-color: #2a2a2a;
   color: #fff;
 }
