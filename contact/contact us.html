@@ -14,7 +14,7 @@
 
      <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
 
-     <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+     <link rel="stylesheet" href="../assets/css/ladgen.css">
 
      <link rel="stylesheet" href="assets/css/owl-carousel.css">
 
@@ -62,136 +62,67 @@
         </div>
     </header>
     <body>
-    <div class="c">Contact Us</div>
-<section>
-    <div class="container">
-        <div class="containerinfo">
-            <div>
-                <h2>Communications</h2>
-                <ul class="info">
-                    <li>
-                        <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                        <span>
-                                Thành Phố Hồ Chí Minh
-                        </span>
-                    </li>
-                    <li>
-                        <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-                        <span>xxxxxx@gmail.com</span>
-                    </li>
-
-                    <li>
-                        <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
-                        <span>0123456789</span>
-                    </li>
-                </ul>
-            </div>
-                <ul class="sci">
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                </ul>
-            
+       
+    <img width="100%" src="../Pictures/store4.jpg" alt="">  
+    <h1 class="head1">Contact Us</h1>  
+    <div class="layout">
+        <div class="layout-item2">
+            <img width="100%" src="../Pictures/tommy.jpg" alt="">
         </div>
-    <div class="Form">
-           <h2>Contact us</h2>
-           <div class="formBox">
-               <div class="inputBox w50">
-                   <input type="text" name="" required id="username">
-                   <span>UserName</span>
-               </div>
-               <div class="inputBox w50">
-                   <input type="number" name="" required id="phone">
-                   <span>Phone</span>
-               </div>
-               <div class="inputBox w50">
-                <input type="text" name="" required id="email">
-                <span>Email</span>
+        
+        <div class="layout-item"><p class="header">Contact us</p>
+            <form action="">
+                <table>
+                    <tr>
+                        <td><input class="form1" type="text" id="fullname" placeholder=" Full Name" ></td>
+                    </tr>
+                    <tr>
+                        <td><input class="form1" type="text" id="phone" placeholder=" Phone Number"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="form1" type="text" id="email" placeholder=" Email"></td>
+                    </tr>
+                    <tr>
+                        <td><textarea class="form2" name="" id="type" cols="28" rows="4" placeholder=" Type your message here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center"><input class="form3" type="submit" onclick="validation()" value="Send Message"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+
+    <div class="layout2">
+        <div class="layout-item">
+            <div class="formtable">
+                <img width="70%" src="../Pictures/w2.jpg" alt="" class="img1"><br>
+            <i class="fa fa-map-marker" aria-hidden="true"></i><span>Distric 3, Ho Chi Minh City</span><br>
+            <i class="fa fa-phone-square" aria-hidden="true"></i><span>0123324234121</span> <br>
+            <i class="fa fa-envelope" aria-hidden="true"></i><span>ladandgen@gmail.com</span><br>
+             <br>
+            <ul class="sci">
+                        <li><a href="#" class="fa fa-facebook fa-item"></a></li>
+                        <li><a href="#" class="fa fa-twitter fa-item"></a></li>
+                        <li><a href="#" class="fa fa-instagram"></a></li>
+            </ul>
             </div>
-               <div class="inputBox w50">
-                   <input type="text" name="" required id="address">
-                  <span>Address</span>
-               </div>
-               <div class="inputBox w100">
-                   <textarea name="" required id="typer"></textarea>
-                   <span>Typer your message..</span>
-               </div>
-               <div class="inputBox w100">
-                <button onclick="validation();">Login</button>
-               </div>
-           </div>
-       </div>
-</section>
+        </div>
+        <div class="layout-item2">
+            <img width="100%" src="../Pictures/tommy2.jpg" alt="">
+        </div>
+    </div>
  </body>
  <script>
     function validation(){
-        var username = document.getElementById("username").value;
+        var fullname = document.getElementById("fullname").value;
         var phone = document.getElementById("phone").value;
         var email = document.getElementById("email").value;
-        var address = document.getElementById("address").value;
-        var typer = document.getElementById("typer").value;
-        if(username  && phone && email && address && typer){
-            swal("Good job!","You success to login","success");
+        var type = document.getElementById("type").value;
+        if(fullname  && phone && email && type){
+            swal("Send Message Successfully!","You success to login","success");
         }else{
             sweetAlert("Oops...","Something went wrong!","error")
         }
     }
 </script>
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3" >
-                <div class="first-item">
-                    <div class="logo">
-                        <img width="60%" src="./img/w1.jpg">
-                    </div>
-                    <ul>
-                        <li><a href="#">District 3 Ho Chi Minh City</a></li>
-                        <li><a href="#">ladandgen@company.com</a></li>
-                        <li><a href="#">0123456789</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <h4>Shopping &amp; Categories</h4>
-                <ul>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Best Seller</a></li>
-                    <li><a href="#">Accessories</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <h4>Custom Design</h4>
-                <ul>
-                    <li><a href="#">Stylist</a></li>
-                    <li><a href="#">Custom</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3">
-                <h4>Help &amp; Information</h4>
-                <ul>
-                    <li><a href="./blog.html">Blog</a></li>
-                    <li><a href="./About us/about.html">About Us</a></li>
-                    <li><a href="./contact us/contact us.html">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-12">
-                <div class="under-footer">
-                    <p>Copyright © 2022 Lad&Gen Co., Ltd. All Rights Reserved. 
-                        <div>
-                            <ul class="icon-footer">
-                                <li class="icon-footer"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li class="icon-footer"><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li class="icon-footer"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li class="icon-footer"><a href="#"><i class="fa fa-behance"></i></a></li>
-                            </ul>
-                        </div> 
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
- </html>
