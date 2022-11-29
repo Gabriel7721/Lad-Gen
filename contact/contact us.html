@@ -119,10 +119,22 @@
         var phone = document.getElementById("phone").value;
         var email = document.getElementById("email").value;
         var type = document.getElementById("type").value;
-        if(fullname  && phone && email && type){
-            swal("Send Message Successfully!","You success to login","success");
+        if (fullname && email && phone && type){
+        Swal.fire({
+            icon: 'success',
+            title: 'Success...',
+            html: 'Login Success'
+            })
         }else{
-            sweetAlert("Oops...","Something went wrong!","error")
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            html: 'information cannot be left blank'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location="./";
+                }
+            })
         }
-    }
+}
 </script>
